@@ -14,6 +14,15 @@ public class GreetingController {
     @RequestMapping("/greeting")
     public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name) {
         return new Greeting(counter.incrementAndGet(),
-                            String.format(template, name));
+                            String.format(template, name),10,"Aditi");
     }
+    
+    @RequestMapping("/add")
+    public Addition add() {
+    	int num1=2;
+    	int num2=3;
+    	
+        return new Addition(num1,num2,(num1+num2));
+    }
+    
 }
