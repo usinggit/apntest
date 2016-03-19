@@ -16,13 +16,13 @@ public class GreetingController {
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, name),10,"Aditi");
     }
-    
+/*    
     @RequestMapping("/add")
-    public Addition add() {
+    public addition add() {
     	int num1=2;
     	int num2=3;
     	
-        return new Addition(num1,num2,(num1+num2));
-    }
+        return new addition(num1,num2,(num1+num2));
+    }*/
     
 }
